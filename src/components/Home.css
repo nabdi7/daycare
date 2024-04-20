@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Montserrat:wght@100&family=Poppins:wght@100&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body {
+      overflow-x: hidden;
+      font-family: 'Inter', sans-serif;
+}
+  
+/* background image */
+.background-image{
+    background-image: url("../images/background1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    background-position: center;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.title {
+    font-size: 35px;
+    margin-bottom: 1rem;
+    color: white;
+    font-style: italic;
+}
+
+.title-sub {
+    font-size: 80px;
+    margin-bottom: 1rem;
+}
+
+
+/* about the daycare */
+.aboutSection {
+    width: 100%;
+    position: relative;
+    float: left;
+    background: #fff;
+    padding: 102px 0;
+}
+.aboutSection .leftSide {
+    width: 705px;
+    position: relative;
+    float: left;
+    padding-left: 78px;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.aboutSection .rightSide {
+    width: calc(100% - 755px);
+    position: relative;
+    float: left;
+    padding-left: 57px;
+}
+.aboutSection .rightSide h2 {
+    font: 32px/34px 'orkneybold';
+    color: #000;
+}
+.aboutSection .rightSide p {
+    font: 24px/40px 'orkneyregular';
+    color: #1f1917;
+}
+.aboutSection .rightSide h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 15px;
+}
+.aboutSection ul {
+    padding-left: 20px; 
+    list-style-type: none; 
+}
+
+.aboutSection ul>li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    align-items: center; 
+}
+
+.aboutSection ul>li::before {
+    content: '\2022';
+    color: black;
+    font-size: 16px; 
+    margin-right: 8px; 
+    vertical-align: middle;
+}
+
+.gallery-title {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* programs */
+.programBox {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+    background-color: var(--blue);
+    background-image: url(../images/program-bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+.programs {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.programBox h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.programBox .programs-container {
+    max-width: 830px;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.programs-container {
+    width: 100%;
+    max-width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+.programBox .programs-container .program {
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 2rem;
+    display: block;
+}
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.programBox .program .program-image {
+    max-height: 180px;
+    overflow: hidden;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.programBox .program .program-image>img {
+    transition: all 350ms ease-in-out;
+    object-fit: cover;
+    width: 100%;
+}
+
+.programBox .program .program-type {
+    background-color: #fff;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 350ms ease-in-out;
+}
+
+.program .program-type h3 {
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.program .program-type .ageRange {
+    color: #339fd3;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+p {
+    line-height: 1.8;
+}
+
+/* testimonials */
+
+
+
+/* contact us */
+.contactSection {
+    width: 100%;
+    position: relative;
+    float: left;
+    background: #E4EAEF;
+}
+.contactSection .leftCblock {
+    width: 50%;
+    position: relative;
+    float: left;
+    background: burlywood url(../images/contact.png) center top no-repeat;
+    background-size: contain;
+    padding: 80px;
+    text-align: center;
+}
+.contactSection h1 {
+    font: 48px 'orkneybold';
+    color: #fff;
+}
+.contactSection .leftCblock iframe {
+    display: block;
+    margin: 0 auto;
+    margin-top: 38px;
+    width: 100%;
+    text-align: center;
+    max-width: 500px;
+}
+.contactSection .rightCBlock {
+    width: 50%;
+    position: relative;
+    float: left;
+    background: #E4EAEF;
+}
+.contactSection .rightCBlock .desc {
+    width: 520px;
+    position: relative;
+    margin: 80px auto;
+    padding: 35px 45px;
+    background: #fff;
+    box-shadow: 0 0 10px #f1f1f1;
+}
+.contactSection .rightCBlock h1 {
+    font: 40px 'orkneybold';
+    color: #000;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+form div {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+input[type="text"]:focus::placeholder,
+input[type="email"]:focus::placeholder,
+textarea:focus::placeholder {
+    top: -20px; 
+    font-size: 12px; 
+    color: #555; 
+}
+input[type="message"],
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    height: 200px;
+}
+input[type="message"]:focus::placeholder,
+textarea:focus::placeholder {
+    top: -20px; 
+    font-size: 12px; 
+    color: #555; 
+}
+button {
+    background-color: greenyellow;
+    color: black;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: green;
+}
+.thank-you-message {
+    margin-top: 1rem;
+    color: greenyellow; 
+    font-size: 15px;
+}
+@media screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Background image */
+    .background-image {
+        padding-top: 2rem; 
+        background-attachment: scroll;
+    }
+
+    .title {
+        font-size: 23px;
+        margin-bottom: 1rem;
+        line-height: 1.1;
+        letter-spacing: -.9px;
+        color: white;
+        font-style: italic;
+    }
+    
+    .title-sub {
+        font-size: 5rem;
+        line-height: 1.1;
+        letter-spacing: -5px;
+        margin-bottom: 1rem;
+    }
+    /* about the daycare  */
+    .aboutSection {
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    .aboutSection .leftSide,
+    .aboutSection .rightSide {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center; 
+    }
+
+    .aboutSection .leftSide img {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .aboutSection .rightSide {
+        padding: 0;
+    }
+
+    .aboutSection .rightSide h2 {
+        font-size: 26px;
+    }
+
+    .aboutSection .rightSide p {
+        font-size: 18px; 
+    }
+
+    .aboutSection .rightSide h3 {
+        font-size: 22px; 
+    }
+
+    .aboutSection ul,
+    .bodycontent ol {
+        padding-left: 0; 
+    }
+
+    .aboutSection ul>li,
+    .bodycontent ol>li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    /* programs  */
+    .programBox .programs-container .program {
+        width: 100%; 
+    }
+
+
+    /* contact us  */
+    .contactSection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactSection .leftCblock,
+    .contactSection .rightCBlock {
+        width: 100%;
+        float: none;
+    }
+
+    .contactSection .rightCBlock .desc {
+        width: 350px;
+        position: relative;
+        margin: 80px auto;
+        padding: 35px 45px;
+        background: #fff;
+        box-shadow: 0 0 10px #f1f1f1;
+    }
+    form {
+        width: 100%;
+    }
+    
+
+}
+
+/* ipad air, pro,  surface pro, next hub*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Programs section */
+    .programBox .programs-container .program {
+        width: 50%; 
+    }
+
+    .programBox .program .program-type h3 {
+        font-size: 20px; 
+        padding-top: 15px; 
+    }
+
+    .programBox .program .program-type .ageRange {
+        margin-bottom: 8px;
+    }
+
+    /* About section */
+    .aboutSection {
+        display: flex;
+        flex-direction: column-reverse; 
+    }
+
+    .aboutSection .leftSide,
+    .aboutSection .rightSide {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center; 
+    }
+
+    .aboutSection .leftSide img {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .aboutSection .rightSide {
+        padding: 0;
+    }
+
+    .aboutSection .rightSide h2 {
+        font-size: 26px;
+    }
+
+    .aboutSection .rightSide p {
+        font-size: 18px; 
+    }
+
+    .aboutSection .rightSide h3 {
+        font-size: 22px; 
+    }
+
+    .aboutSection ul,
+    .bodycontent ol {
+        padding-left: 0; 
+    }
+
+    .aboutSection ul>li,
+    .bodycontent ol>li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    /* Contact section */
+    .contactSection .rightCBlock .desc {
+        width: 400px; 
+    }
+    form {
+        width: 100%;
+    }
+
+}
