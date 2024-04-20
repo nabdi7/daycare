@@ -65,7 +65,7 @@ const Home = () => {
         {/* background image */}
         <div className='background-image'>
             <div className='title-container'>
-                <h1 className='title'>Almaas Family Home Childcare</h1>
+                <h1 className='title'>Lovingcare Childcare</h1>
                 <h1 className='title-sub'>A beautiful place to grow. </h1>
             </div>
         </div>
@@ -79,14 +79,14 @@ const Home = () => {
                 </div>
                 
                 <div class="rightSide">
-                    <h2>Welcome to Almaas Family Childcare</h2>
+                    <h2>Welcome to Lovingcare Childcare</h2>
                     
                     <p>We offer a high-quality learning center located in Covington, 
                         WA - a truly new, innovative and affordable concept in 
                         childcare. Our full-time childcare offers the finest facilities available for children 
                         ages new born to school-aged. Almaas Family Childcare 
                         provides a high-quality and professional caregiver's home. 
-                        It's our aim to provide fun and caring. <br/> Contact us at <a href='tel:+12068833462'><b>(206)934-9581</b></a>
+                        It's our aim to provide fun and caring. <br/> Contact us at <a href='tel:+18018158685'><b>(801)815-8685</b></a>
                         &nbsp;for more information
                     </p>
 
@@ -104,7 +104,7 @@ const Home = () => {
 
                     <br/>
                     <br/>
-                    <p>Please feel free to contact us at <a href='tel:+12068833462'><b>(206)934-9581</b></a> to setup a 
+                    <p>Please feel free to contact us at <a href='tel:+18018158685'><b>(801)815-8685</b></a> to setup a 
                     time when you can come tour our facility and meet. We look 
                     forward to meeting you and your children. </p>
                     
