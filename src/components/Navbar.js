@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Link as ScrollLink } from 'react-scroll';
-import logo from '../images/almaas-transparent.png';
+// import logo from '../images/almaas-transparent.png';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -23,14 +23,14 @@ const Navbar = () => {
           </ul>
         </div>
         <div className='navbar-logo'>
-          <img
+          {/* <img
             src={logo}
             width='190px'
             height='auto'
             max-width='100%'
             max-height='100%'
             alt='Logo'
-          />
+          /> */}
         </div>
         <div className='navbar-links-right'>
           <ul>

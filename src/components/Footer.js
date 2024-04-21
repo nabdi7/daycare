@@ -7,16 +7,17 @@ const Footer = () => {
         <>
         <footer className='footer'>
             <div className='logo-div'>
-            <a href='/'> 
-            <img
-              src={logo}
-              width='200px'
-              height='auto'
-              max-width='100%'
-              max-height='100%'
-              alt='Logo'
-            />
-          </a>            </div>
+                <a href='/'> 
+                <img
+                src={logo}
+                width='200px'
+                height='auto'
+                max-width='100%'
+                max-height='100%'
+                alt='Logo'
+                />
+                </a>
+            </div>
 
             <div className='footer-container'>
                 {/* <h1 className='footer-title'> Almaas Family Home Childcare</h1> */}
@@ -24,10 +25,12 @@ const Footer = () => {
                 <p className='footer-description'> <a href='mailto:asmohamud99@gmail.com'> <b>asmohamud99@gmail.com</b></a></p>
                 <p className='footer-description'> <a href='tel:+18018158685'><b>(801)815-8685</b></a></p>
             </div>
-            <div className="copyright">
-                <p>Made by <a href="https://qualitydesigns.site/" target="_blank" rel="noopener noreferrer" style={{ color: 'black', fontWeight: 'bold'}}>Quality Designs</a> || ©{new Date().getFullYear()} Lovingcare Childcare</p>
-            </div>
+            
         </footer>
+        
+        <div className="copyright">
+            <p>Made by <a href="https://qualitydesigns.site/" target="_blank" rel="noopener noreferrer" style={{ color: 'black', fontWeight: 'bold'}}>Quality Designs</a> || ©{new Date().getFullYear()} Lovingcare Childcare</p>
+        </div>
     
         </>
     );
