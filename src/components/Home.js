@@ -1,15 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, Element } from 'react-scroll';
 import './Home.css';
-import Gallery from './Gallery';
 import emailjs from 'emailjs-com'; 
-// import image1 from '../images/image1.jpeg';
-// import image2 from '../images/image2.jpeg';
-// import image3 from '../images/image4.jpg';
-// import image4 from '../images/image5.jpg';
-// import image5 from '../images/kid6.jpeg';
-// import image6 from '../images/kid5.jpeg';
-// import aboutImage from '../images/paint.jpg';
+import certifiedImage from '../images/statecertified.png';
 import toddler from '../images/preshool.jpg';
 import preschool from '../images/background.jpg';
 import programImage from '../images/program1.jpeg';
@@ -25,16 +18,6 @@ const Home = () => {
     const [user_phone, setPhone] = useState(""); 
     const [message, setMessage] = useState("");
     const formRef = useRef();
-
-    // const galleryImages = [
-    //     { img: image1 },
-    //     { img: image2 },
-    //     { img: image3 },
-    //     { img: image4 },
-    //     { img: image5 },
-    //     { img: image6 },
-    // ]
-    
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -80,21 +63,21 @@ const Home = () => {
     }, [backgroundImages.length]);
 
     const titles = [
-        "Our goal is to",
-        "Quality Learning Center in Kent, WA",
-        "Contact US",
+        "Our Mission",
+        "Creative Learning Environment",
+        "Whole-Child Approach",
     ];
 
     const subtitles = [
-        "Enrich minds",
-        "Exploration",
-        "&Experience",
+        "Enrichment",
+        "Discovery",
+        "Experience",
     ];
 
     const descriptions = [
-        "We emphasize social, emotional, and intellectual development through",
-        "Small family style childcare and preschool center",
-        "All Kids welcome",
+        "At our daycare, we focus on nurturing children's growth and development in a supportive and caring environment.",
+        "We provide a creative learning environment where children can explore, imagine, and create.",
+        "We take a holistic approach to early learning, supporting children's social, emotional, and physical development.",
     ];
 
     return (
@@ -117,21 +100,20 @@ const Home = () => {
                         {/* <img src={aboutImage} alt='program' /> */}
                         <h1> Lovingcare Childcare </h1>
 
-                        <p>Welcome to Rising Star Academy, a quality learning center located in Olathe, Kansas. We are a small family style childcare and preschool center in a cozy home environment. So, if you feel lost in those large 100-plus "super" centers, not knowing one teacher or child from the next, count on us!</p>
-                        <p>Our Preschool program is design to develop knowledge and skill in the social, physical, emotional and cognitive areas. Our goal is to help children develop skills and strategies that will help them learn and establish a foundation for lifelong success in education.</p>
-                        <p> We recognize that each child has unique talents, learning styles and personalities. We are committed to working within each child’s comfort zone to ensure optimal social, emotional and educational results.</p>
-                        <p> We are dedicated to providing the best care for your child while encouraging an environment filled with fun and education. We offer child care for children ages 12 months and walking to school age. </p>
-
+                        <p>Welcome to Lovingcare Childcare, a nurturing and supportive learning environment for children in Kent, WA. We pride ourselves on providing high-quality childcare and preschool services in a warm and inviting atmosphere.</p>
+                        <p>At Lovingcare Childcare, we believe in fostering a love for learning through play-based activities and hands-on experiences. Our dedicated team of educators focuses on nurturing each child's individual interests, talents, and learning styles.</p>
+                        <p>We are committed to promoting social, emotional, and cognitive development in children, helping them build confidence and independence. With our comprehensive curriculum and engaging learning opportunities, we strive to prepare children for success in school and in life.</p>
+                        <p>Come join us at Lovingcare Childcare, where every child is valued, supported, and encouraged to reach their full potential.</p>
                         <h2><strong>Highlights/Quick Facts:</strong></h2>
                         <ul>
-                            <li>All-Inclusive Tuition including Stretch-n Grow</li>
+                            <li>Comprehensive and Affordable Tuition</li>
                             <li>Safe &amp; Secure</li>
-                            <li>Developmentally Appropriate Curriculum</li>
-                            <li>Nutritious Meals and Snacks</li>
+                            <li>Engaging and Developmentally Appropriate Curriculum</li>
+                            <li>Healthy and Nutritious Meals and Snacks Provided Daily</li>
                             <li>Qualified, Caring, and Experienced Staff</li>
                         </ul>
 
-                        <p>Our vision is simple, to be the most nurturing environment for children and the most trusted by parents. Every day, we recommit ourselves to the future by focusing on the needs of our children through age-appropriate activities in a loving and safe setting. Please feel free to contact us to setup a time when you can come tour our facility and meet our staff. We look forward to meeting you and your children.</p>
+                        <p>At Lovingcare Childcare, our vision is clear: to create the most nurturing environment for children, earning the trust of parents each day. We are dedicated to meeting the individual needs of every child through age-appropriate activities in a loving and secure setting. We invite you to schedule a tour of our facility to meet our staff and experience our welcoming atmosphere firsthand. We can't wait to welcome you and your children!</p>
 
                         <br className="line"></br>
                     </div>
@@ -140,8 +122,8 @@ const Home = () => {
                         <h3>Latest News</h3>
 
                         <ul>
-                            <li><a href="contact.html" previewlistener="true"><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> Enrollment Open Now for 2023-2024. Inquire on the Contact page.</a></li>
-                            <li><a href="enrollment.html" previewlistener="true"><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> You can download enrollment forms on the Enrollment page.</a></li>
+                            <li><a href="contact.html" previewlistener="true"><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> Enrollment Open Now for 2023-2024. Contact us Now!!</a></li>
+                            <li><a href="enrollment.html" previewlistener="true"><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> You can now download enrollment forms on our page.</a></li>
                         </ul>
 
                     </div>	
@@ -152,25 +134,46 @@ const Home = () => {
             </section>
         </Element>
 
-        {/* gallary  */}
-        <h1 className='gallery-title'> PHOTO GALLERY</h1>
-        {/* <Gallery
-            galleryImages={galleryImages}
-         /> */}
 
+        {/* qualified */}
+        <section className='qualified'>
+            <div className="container">
+                <div className="parts">
+                    <p class="black_text"><span>State</span>  <img src={certifiedImage} alt='program' /></p>
+                    <h3>Licensed &amp;</h3>
+                    <h5>Certified</h5>
+                    <p class="left-text">Experience top-quality education in a nurturing <br/>
+                        environment for your child, providing both <br/>
+                        peace of mind and confidence for parents.</p>
+                </div>
+                <div className="parts">
+                    <h4>Why are we the best place <br/>
+                    to learn?
+                    </h4>
+                    <p> Age-appropriate curriculum</p>
+                    <p> Flexible hours and enrollment plans</p>
+                    <p> Strict safety policies and CPR/First Aid Certified Staff</p>
+                    <p> Affordable Tuition with Convenient Payment Options</p>
+                    <p> Healthy Meals and Snacks Provided Daily</p>
+                    <p> <a href="about.html" previewlistener="true">Learn more about us</a></p>
+                </div>
+            </div>
+        
+        </section>
+        
         {/* programs  */}
         <Link to='servicesSection' smooth={true} duration={1000}></Link>
         <Element name='servicesSection'>
-            <div className="programs">
+            <section className="programs">
                 <div class="programParts"> 
                     <img src={programImage} alt='program' />
                     <div class="bottomText">
                         <h2>Curriculum</h2>
-                        <p>Using exploration and discovery as a way of learning, our preschool curriculum enables children to develop confidence, creativity, and lifelong critical thinking skills.</p>
-                        <a href="curriculum.html" previewlistener="true">more</a> 
+                        <p>Our dynamic curriculum encourages exploration and fosters a love for learning, guiding children on a journey of discovery and growth.</p>                        
+                        <a href="curriculum.html" previewlistener="true">Learn more</a> 
                     </div>
                     <div class="overlayText">
-                        <p>We believe that all children are unique and no two children learn in the same way. </p>
+                        <p>We believe in nurturing the individual strengths and interests of every child, providing them with a solid foundation for future success.</p>
                         <h4>LEARNING THROUGH PLAY</h4>
                         <a href="curriculum.html" previewlistener="true">Learn More</a> 
                     </div>
@@ -180,12 +183,12 @@ const Home = () => {
                     <img src={programImage} alt='program' />
                     <div class="bottomText">
                         <h2>Programs</h2>
-                        <p>Using exploration and discovery as a way of learning, our preschool curriculum enables children to develop confidence, creativity, and lifelong critical thinking skills.</p>
-                        <a href="curriculum.html" previewlistener="true">more</a> 
+                        <p>Our programs are designed to inspire curiosity and creativity, offering enriching experiences that spark imagination and discovery.</p>                        
+                        <a href="curriculum.html" previewlistener="true">Learn more</a> 
                     </div>
                     <div class="overlayText">
-                        <p>We believe that all children are unique and no two children learn in the same way. </p>
-                        <h4>LEARNING THROUGH PLAY</h4>
+                        <p>Offering Programs for Toddlers, Preschool, and School-Age, .</p>
+                        <h4>Discover Now!</h4>
                         <a href="curriculum.html" previewlistener="true">Learn More</a> 
                     </div>
                 </div>
@@ -194,25 +197,18 @@ const Home = () => {
                     <img src={programImage} alt='program' />
                     <div class="bottomText">
                         <h2>Enrollment</h2>
-                        <p>Using exploration and discovery as a way of learning, our preschool curriculum enables children to develop confidence, creativity, and lifelong critical thinking skills.</p>
-                        <a href="curriculum.html" previewlistener="true">more</a> 
+                        <p>Our enrollment process is seamless and personalized, ensuring that families feel welcomed and supported as they join our Lovingcare Childcare community.</p>
+                        <a href="curriculum.html" previewlistener="true">Learn more</a> 
                     </div>
                     <div class="overlayText">
-                        <p>We believe that all children are unique and no two children learn in the same way. </p>
-                        <h4>LEARNING THROUGH PLAY</h4>
-                        <a href="curriculum.html" previewlistener="true">Learn More</a> 
+                        <p>We are now accepting enrollment applications for all ages.</p>
+                        <h4>Enroll Now!</h4>
+                        <a href="curriculum.html" previewlistener="true">Enroll Now</a> 
                     </div>
                 </div>
 
-            </div>
+            </section>
         </Element>
-
-        {/* qualified */}
-        <section className='qualified'>
-            {/* highliy qualified staff */}
-        
-
-        </section>
 
         {/* testimonials */}
         <section className='testimonials'>
