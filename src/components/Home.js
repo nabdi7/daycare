@@ -18,7 +18,7 @@ const Home = () => {
     const [message, setMessage] = useState("");
     const formRef = useRef();
 
-    const sendEmail = (e) => {
+    const sendEmail = (e) => { 
         e.preventDefault();
 
     emailjs
@@ -48,7 +48,6 @@ const Home = () => {
     const backgroundImages = [
         programImage,
         toddler,
-        // preschool,
     ];
 
     useEffect(() => {
@@ -63,19 +62,16 @@ const Home = () => {
 
     const titles = [
         "Our Mission",
-        // "Creative Learning Environment",
         "Whole-Child Approach",
     ];
 
     const subtitles = [
         "Enrichment",
-        // "Discovery",
         "Experience",
     ];
 
     const descriptions = [
         "At our daycare, we focus on nurturing children's growth and development in a supportive and caring environment.",
-        // "We provide a creative learning environment where children can explore, imagine, and create.",
         "We take a holistic approach to early learning, supporting children's social, emotional, and physical development.",
     ];
 
