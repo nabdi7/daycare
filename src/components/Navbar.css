@@ -19,13 +19,11 @@ body {
     align-items: center;
     border-bottom: 1px solid #eee;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
-}
-
-.container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .navbar-logo {
     display: flex; 
     justify-content: center; 
@@ -53,17 +51,17 @@ body {
 }
 
 .active {
-    background-color: greenyellow;
+    background-color: green;
     color: black;
     border-radius: 1311.188px;
     padding: 0.8rem 1rem;
 }
 
 .navbar-links li:hover {
-    color: green;
+    color: brown;
 }
 .active:hover {
-    background-color: green;
+    background-color: brown;
 }
 
 @media screen and (max-width: 768px) {
@@ -92,8 +90,8 @@ body {
     }
     
     .navbar-links li {
-        margin: 5 0.5rem; 
         font-size: 13px;
+        padding: 10px;
     }
     .navbar-links li a.active {
         color: black;

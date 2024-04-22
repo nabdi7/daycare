@@ -1,22 +1,23 @@
 import React from 'react';
 
 import { Link as ScrollLink } from 'react-scroll';
-import logo from '../images/almaas-transparent.png';
+import logo from '../images/logo-transparent.png';
 import './Navbar.css';
 
 const Navbar = () => {
   return (
     <div className='navbar'>
-      <div className='container'>
         <div className='navbar-logo'>
-          <img
-            src={logo}
-            width='190px'
-            height='auto'
-            max-width='100%'
-            max-height='100%'
-            alt='Logo'
-          />
+          <a href='/'> 
+            <img
+              src={logo}
+              width='190px'
+              height='auto'
+              max-width='100%'
+              max-height='100%'
+              alt='Logo'
+            />
+          </a>
         </div>
         <div className='navbar-links'>
           <ul>
@@ -42,7 +43,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-      </div>
     </div>
   );
 };

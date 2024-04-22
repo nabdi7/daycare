@@ -24,7 +24,8 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* width: 50%; */
+    transform: translate(-70%, -70%);
     text-align: left;
     color: white;
 }
@@ -46,17 +47,15 @@ body {
     display: inline-block;
     padding: 0px 50px 0px 7px;
     margin-bottom: 20px;
-    background: rgb(2, 216, 251);
-    background: -moz-linear-gradient(left, rgba(2, 216, 251, 1) 0%, rgba(38, 209, 183, 1) 32%, rgba(119, 212, 103, 1) 61%, rgba(228, 221, 17, 1) 100%);
-    background: -webkit-linear-gradient(left, rgba(2, 216, 251, 1) 0%, rgba(38, 209, 183, 1) 32%, rgba(119, 212, 103, 1) 61%, rgba(228, 221, 17, 1) 100%);
-    background: linear-gradient(to right, rgba(2, 216, 251, 1) 0%, rgba(38, 209, 183, 1) 32%, rgba(119, 212, 103, 1) 61%, rgba(228, 221, 17, 1) 100%);
+    background: green;
+    background: linear-gradient(to right, rgb(6, 226, 193) 0%, rgb(33, 178, 108) 32%, rgba(119, 212, 103, 1) 61%, rgb(9, 214, 16) 100%);
 }
 .banner-content p {
-    color: #2c2c2c;
-    font-family: 'Dosis_reg';
+    width: 60%;
+    color: black;
+    font-weight: 500;
     font-size: 19px;
     padding-bottom: 35px;
-    text-shadow: #fff 2px 2px 1px;
 }
 
 /* about the daycare */
@@ -80,7 +79,7 @@ body {
     box-sizing: border-box;
 }
 .leftSide h1 {
-    color: #D8484F;
+    color: brown;
     font-size: 40px;
     font-family: 'Dosis_bold';
     text-transform: uppercase;
@@ -153,7 +152,7 @@ ol, ul {
     float: left;
     width: 100%;
 }
-.rightSide ul li a {
+.rightSide ul li span {
     display: block;
     font: normal 17px / 25px 'Montserrat_reg';
     color: #a1cc3a;
@@ -185,6 +184,10 @@ ol, ul {
 .parts:nth-last-of-type(2) {
     text-align: right;
     position: relative;
+}
+.container {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 .parts {
     width: 50%;
@@ -228,10 +231,8 @@ ol, ul {
     display: inline-block;
     text-transform: uppercase;
     margin-right: 70px;
-    background: rgb(2, 216, 251);
-    background: -moz-linear-gradient(left, rgba(2, 216, 251, 1) 0%, rgba(38, 209, 183, 1) 32%, rgba(119, 212, 103, 1) 61%, rgba(228, 221, 17, 1) 100%);
-    background: -webkit-linear-gradient(left, rgba(2, 216, 251, 1) 0%, rgba(38, 209, 183, 1) 32%, rgba(119, 212, 103, 1) 61%, rgba(228, 221, 17, 1) 100%);
-    background: linear-gradient(to right, rgba(2, 216, 251, 1) 0%, rgba(38, 209, 183, 1) 32%, rgba(119, 212, 103, 1) 61%, rgba(228, 221, 17, 1) 100%);
+    background: green;
+    background: linear-gradient(to right, rgb(6, 226, 193) 0%, rgb(33, 178, 108) 32%, rgba(119, 212, 103, 1) 61%, rgb(9, 214, 16) 100%);
 }
 .parts h5 {
     color: #13d3d7;
@@ -266,7 +267,6 @@ ol, ul {
     padding: 15px 0 0px 30px;
 }
 
-
 /* programs */
 .programs {
     width: 100%;
@@ -288,7 +288,6 @@ ol, ul {
     position: absolute;
     bottom: 4px;
     width: 100%;
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
     display: flex;
     flex-direction: column; /* Align items in a column */
@@ -333,8 +332,6 @@ ol, ul {
     height: auto;
     padding: 160px 0 10px;
     text-align: center;
-    background: -moz-linear-gradient(top, rgba(74, 93, 136, 0.7) 0%, rgba(74, 93, 136, 0.7) 100%);
-    background: -webkit-linear-gradient(top, rgba(74, 93, 136, 0.7) 0%, rgba(74, 93, 136, 0.7) 100%);
     background: linear-gradient(to bottom, rgba(74, 93, 136, 0.7) 0%, rgba(74, 93, 136, 0.7) 100%);
 }
 .programParts:hover .bottomText {
@@ -368,6 +365,7 @@ ol, ul {
     text-transform: uppercase;
     padding: 0 100px 100px 100px;
     line-height: 30px;
+    text-decoration: none;
 }
 
 
@@ -467,7 +465,7 @@ textarea:focus::placeholder {
     color: #555; 
 }
 button {
-    background-color: greenyellow;
+    background-color: green;
     color: black;
     padding: 15px 20px;
     border: none;
@@ -479,11 +477,11 @@ button {
 }
 
 button:hover {
-    background-color: green;
+    background-color: brown;
 }
 .thank-you-message {
     margin-top: 1rem;
-    color: greenyellow; 
+    color: green; 
     font-size: 15px;
 }
 @media screen and (max-width: 768px) {
@@ -492,78 +490,139 @@ button:hover {
     }
 
     /* Background image */
-    .background-image {
-        padding-top: 2rem; 
-        background-attachment: scroll;
-    }
-
-    .title {
-        font-size: 23px;
-        margin-bottom: 1rem;
-        line-height: 1.1;
-        letter-spacing: -.9px;
+    .banner-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -60%);
+        text-align: left;
         color: white;
-        font-style: italic;
+    }
+    .banner-content h6 {
+        color: #111111;
+        font-size: 18px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        margin-top: 150px;
     }
     
-    .title-sub {
-        font-size: 5rem;
-        line-height: 1.1;
-        letter-spacing: -5px;
-        margin-bottom: 1rem;
+    .banner-content h2 {
+        color: #fff;
+        font-size: 42px;
+        text-transform: uppercase;
+        display: inline-block;
+        padding: 0px 50px 0px 7px;
+        margin-bottom: 20px;
     }
+    .banner-content p {
+        color: black;
+        font-size: 20px;
+        padding-bottom: 35px;
+    }
+    
     /* about the daycare  */
     .aboutSection {
-        display: flex;
-        flex-direction: column-reverse; 
-    }
-
-    .aboutSection .leftSide,
-    .aboutSection .rightSide {
         width: 100%;
-        float: none;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center; 
+        padding: 0 15px;
+        margin: 0 auto;
+        height: auto;
+        display: flex; 
+        flex-direction: column; 
     }
 
-    .aboutSection .leftSide img {
-        width: 90%; 
-        margin: 20px auto; 
-    }
-
-    .aboutSection .rightSide {
+    .leftSide {
+        width: 100%; 
         padding: 0;
     }
 
-    .aboutSection .rightSide h2 {
-        font-size: 26px;
+    .leftSide h1 {
+        font-size: 28px; 
     }
 
-    .aboutSection .rightSide p {
-        font-size: 18px; 
+    .leftSide p {
+        font-size: 15px; 
     }
 
-    .aboutSection .rightSide h3 {
-        font-size: 22px; 
-    }
-
-    .aboutSection ul,
-    .bodycontent ol {
-        padding-left: 0; 
-    }
-
-    .aboutSection ul>li,
-    .bodycontent ol>li {
-        padding-bottom: 10px;
-        padding-top: 10px;
-    }
-
-    /* programs  */
-    .programBox .programs-container .program {
+    .rightSide {
         width: 100%; 
+        padding: 0;
+        margin-bottom: 0.5rem;
     }
 
+    .rightSide h3 {
+        font-size: 24px; 
+        text-align: left;
+    }
+
+    .rightSide ul li a {
+        padding: 5px 5px 5px 20px; 
+        text-align: left;
+    }
+    
+    /* programs  */
+    .programs {
+        width: 100%;
+        flex-direction: column;
+    }
+    .programParts {
+        width: 100%;
+    }
+
+    /* qualified  */
+    .qualified {
+        width: 100%;
+        padding: 75px 0;
+        background: #fff;
+    }
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        flex-direction: column;
+    }
+    .parts {
+        width: 100%; 
+        margin-bottom: 3rem;
+    }
+    .left-text {
+        text-align: center;
+        position: relative;
+        right: 0;
+    }
+    .parts p img {
+        max-width: 25%;
+        height: auto;
+        margin: 0 10px 15px;
+    }
+    .black_text img {
+        margin-left: 80px !important;
+        margin-top: -25px !important;
+        margin-bottom: -40px !important;
+        z-index: 1;
+        position: absolute;
+        right: 10px;
+    }
+    .parts h3 {
+        padding: 0px 60px 0px 10px;
+        color: #fff;
+        font-size: 40px;
+        margin-right: 65px;
+    }
+    .parts h5 {
+        color: #13d3d7;
+        font-size: 40px;
+        margin-right: 85px;
+        margin-bottom: 0px;
+    }
+    .parts h4 {
+        color: #858585;
+        font-size: 25px;
+        padding-bottom: 20px;
+    }
+    .parts p {
+        color: #777;
+        font-size: 13.5px;
+        padding: 15px 0 0px 30px;
+    }
 
     /* contact us  */
     .contactSection {
@@ -594,70 +653,66 @@ button:hover {
 
 /* ipad air, pro,  surface pro, next hub*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    /* Programs section */
-    .programBox .programs-container .program {
-        width: 50%; 
-    }
-
-    .programBox .program .program-type h3 {
-        font-size: 20px; 
-        padding-top: 15px; 
-    }
-
-    .programBox .program .program-type .ageRange {
-        margin-bottom: 8px;
-    }
-
-    /* About section */
+    
+    /* about the daycare  */
     .aboutSection {
-        display: flex;
-        flex-direction: column-reverse; 
-    }
-
-    .aboutSection .leftSide,
-    .aboutSection .rightSide {
         width: 100%;
-        float: none;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center; 
+        padding: 0 15px;
+        margin: 0 auto;
+        height: auto;
+        display: flex; 
+        flex-direction: column; 
     }
 
-    .aboutSection .leftSide img {
-        width: 90%; 
-        margin: 20px auto; 
-    }
-
-    .aboutSection .rightSide {
+    .leftSide {
+        width: 100%; 
         padding: 0;
     }
 
-    .aboutSection .rightSide h2 {
-        font-size: 26px;
+    .rightSide {
+        width: 100%; 
+        padding: 0;
+        margin-bottom: 0.5rem;
     }
 
-    .aboutSection .rightSide p {
-        font-size: 18px; 
+    .rightSide ul li a {
+        padding: 5px 5px 5px 20px; 
+        text-align: left;
+    }
+    
+    /* programs  */
+    .programs {
+        width: 100%;
+        flex-direction: column;
+    }
+    .programParts {
+        width: 100%;
     }
 
-    .aboutSection .rightSide h3 {
-        font-size: 22px; 
+    /* qualified  */
+    .qualified {
+        width: 100%;
+        padding: 75px 0;
+        background: #fff;
     }
-
-    .aboutSection ul,
-    .bodycontent ol {
-        padding-left: 0; 
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        flex-direction: row;
     }
-
-    .aboutSection ul>li,
-    .bodycontent ol>li {
-        padding-bottom: 10px;
-        padding-top: 10px;
+    .parts {
+        width: 100%; 
+        margin-bottom: 3rem;
     }
-
+    .left-text {
+        text-align: center;
+        position: relative;
+        right: 0;
+    }
+    
     /* Contact section */
     .contactSection .rightCBlock .desc {
-        width: 400px; 
+        width: 90%; 
     }
     form {
         width: 100%;

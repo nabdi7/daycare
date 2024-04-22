@@ -4,7 +4,6 @@ import './Home.css';
 import emailjs from 'emailjs-com'; 
 import certifiedImage from '../images/statecertified.png';
 import toddler from '../images/preshool.jpg';
-import preschool from '../images/background.jpg';
 import programImage from '../images/program1.jpeg';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -49,7 +48,7 @@ const Home = () => {
     const backgroundImages = [
         programImage,
         toddler,
-        preschool,
+        // preschool,
     ];
 
     useEffect(() => {
@@ -65,19 +64,19 @@ const Home = () => {
     const titles = [
         "Our Mission",
         "Creative Learning Environment",
-        "Whole-Child Approach",
+        // "Whole-Child Approach",
     ];
 
     const subtitles = [
         "Enrichment",
         "Discovery",
-        "Experience",
+        // "Experience",
     ];
 
     const descriptions = [
         "At our daycare, we focus on nurturing children's growth and development in a supportive and caring environment.",
         "We provide a creative learning environment where children can explore, imagine, and create.",
-        "We take a holistic approach to early learning, supporting children's social, emotional, and physical development.",
+        // "We take a holistic approach to early learning, supporting children's social, emotional, and physical development.",
     ];
 
     return (
@@ -97,7 +96,6 @@ const Home = () => {
             <section className="bigBox">
                 <div className="aboutSection">
                     <div className="leftSide"> 
-                        {/* <img src={aboutImage} alt='program' /> */}
                         <h1> Lovingcare Childcare </h1>
 
                         <p>Welcome to Lovingcare Childcare, a nurturing and supportive learning environment for children in Kent, WA. We pride ourselves on providing high-quality childcare and preschool services in a warm and inviting atmosphere.</p>
@@ -122,8 +120,8 @@ const Home = () => {
                         <h3>Latest News</h3>
 
                         <ul>
-                            <li><a href="contact.html" previewlistener="true"><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> Enrollment Open Now for 2023-2024. Contact us Now!!</a></li>
-                            <li><a href="enrollment.html" previewlistener="true"><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> You can now download enrollment forms on our page.</a></li>
+                            <li><span><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> Enrollment Open Now for 2023-2024. Contact us Now!!</span></li>
+                            <li><span><FontAwesomeIcon icon={faBullhorn} color='#11BDD0'/> You can now download enrollment forms on our page.</span></li>
                         </ul>
 
                     </div>	
@@ -155,7 +153,7 @@ const Home = () => {
                     <p> Strict safety policies and CPR/First Aid Certified Staff</p>
                     <p> Affordable Tuition with Convenient Payment Options</p>
                     <p> Healthy Meals and Snacks Provided Daily</p>
-                    <p> <a href="about.html" previewlistener="true">Learn more about us</a></p>
+                    <p> <a href="/" previewlistener="true">Learn more about us</a></p>
                 </div>
             </div>
         
@@ -170,12 +168,12 @@ const Home = () => {
                     <div class="bottomText">
                         <h2>Curriculum</h2>
                         <p>Our dynamic curriculum encourages exploration and fosters a love for learning, guiding children on a journey of discovery and growth.</p>                        
-                        <a href="curriculum.html" previewlistener="true">Learn more</a> 
+                        <a href="/" previewlistener="true">Learn more</a> 
                     </div>
                     <div class="overlayText">
                         <p>We believe in nurturing the individual strengths and interests of every child, providing them with a solid foundation for future success.</p>
                         <h4>LEARNING THROUGH PLAY</h4>
-                        <a href="curriculum.html" previewlistener="true">Learn More</a> 
+                        <a href="/" previewlistener="true">Learn More</a> 
                     </div>
                 </div>
 
@@ -184,12 +182,12 @@ const Home = () => {
                     <div class="bottomText">
                         <h2>Programs</h2>
                         <p>Our programs are designed to inspire curiosity and creativity, offering enriching experiences that spark imagination and discovery.</p>                        
-                        <a href="curriculum.html" previewlistener="true">Learn more</a> 
+                        <a href="/" previewlistener="true">Learn more</a> 
                     </div>
                     <div class="overlayText">
                         <p>Offering Programs for Toddlers, Preschool, and School-Age, .</p>
                         <h4>Discover Now!</h4>
-                        <a href="curriculum.html" previewlistener="true">Learn More</a> 
+                        <a href="/" previewlistener="true">Learn More</a> 
                     </div>
                 </div>
 
@@ -198,12 +196,12 @@ const Home = () => {
                     <div class="bottomText">
                         <h2>Enrollment</h2>
                         <p>Our enrollment process is seamless and personalized, ensuring that families feel welcomed and supported as they join our Lovingcare Childcare community.</p>
-                        <a href="curriculum.html" previewlistener="true">Learn more</a> 
+                        <a href="/" previewlistener="true">Learn more</a> 
                     </div>
                     <div class="overlayText">
                         <p>We are now accepting enrollment applications for all ages.</p>
                         <h4>Enroll Now!</h4>
-                        <a href="curriculum.html" previewlistener="true">Enroll Now</a> 
+                        <a href="/" previewlistener="true">Enroll Now</a> 
                     </div>
                 </div>
 

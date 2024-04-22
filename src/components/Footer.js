@@ -1,5 +1,5 @@
 import './Footer.css';
-import logo from "../images/almaas-transparent.png"
+import logo from "../images/logo-transparent.png"
 
 
 const Footer = () => {
